@@ -95,10 +95,10 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 ## 📝 Changelog
 
 - **v2.3.2** (2023-09-23) - Initial public release. Cleaned and optimized by icPriceAction.
-- **v2.3.1** (date unknown) - Loss cooldown with countdown and optional entry blocking; a blocked fill is undone only once across several charts; blocked limit-order cancels retry, plus a once-a-second sweep.
-- **v2.3.0** (date unknown) - Limits use realized P&L only (open P&L is display-only and turns amber when closing would breach the max loss); chart dimming; blocking-only enforcement that never closes held positions; optional win-streak warning; reason-coloured limit message; window follows the Playback clock.
-- **v2.2.0** (date unknown) - Redesigned dashboard (Dark/Light/Custom themes, compact mode, progress bars); trade window with its own time zone; early warnings with sound.
-- **v2.1.0** (date unknown) - Per-instrument session P&L from own fills (or account-wide P&L); session start from the trading session template; thread-safe state; latched limits; optional entry blocking after the limit and outside the trade window.
+- **v2.3.1**              - Loss cooldown with countdown and optional entry blocking; a blocked fill is undone only once across several charts; blocked limit-order cancels retry, plus a once-a-second sweep.
+- **v2.3.0**              - Limits use realized P&L only (open P&L is display-only and turns amber when closing would breach the max loss); chart dimming; blocking-only enforcement that never closes held positions; optional win-streak warning; reason-coloured limit message; window follows the Playback clock.
+- **v2.2.0**              - Redesigned dashboard (Dark/Light/Custom themes, compact mode, progress bars); trade window with its own time zone; early warnings with sound.
+- **v2.1.0**              - Per-instrument session P&L from own fills (or account-wide P&L); session start from the trading session template; thread-safe state; latched limits; optional entry blocking after the limit and outside the trade window.
 
 ---
 
