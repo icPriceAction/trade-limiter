@@ -2,6 +2,7 @@
 
 [![NinjaTrader 8](https://img.shields.io/badge/Platform-NinjaTrader%208-black.svg)](https://ninjatrader.com)
 [![License: Personal Use](https://img.shields.io/badge/License-Personal%20Use-6E6E6E.svg)](#license)
+[![Support: Buy Me a Coffee](https://img.shields.io/badge/Support-Buy%20Me%20a%20Coffee-FFDD00?logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/icpriceaction)
 [![YouTube Guide](https://img.shields.io/badge/YouTube-Watch%20Walkthrough-red.svg)](https://youtube.com/@icPriceAction)
 [![Website](https://img.shields.io/badge/Website-icpriceaction.com-111213.svg)](https://icpriceaction.com)
 
@@ -19,13 +20,31 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 
 ---
 
+## ☕ Support the Project
+
+All tools by **icPriceAction** are **100% free and open-source for personal trading use**. There are no paywalls, subscriptions, or locked features and there never will be!
+
+Developing, optimizing for zero latency on multiple charts/instruments, and maintaining documentation and releases takes a **considerable amount of personal time and ongoing effort**. 
+
+If this tool saves you screen time, improves your execution, or cleans up your charts, buying a coffee is the best way to support continued development:
+
+<p align="left">
+  <a href="https://buymeacoffee.com/icpriceaction" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="190">
+  </a>
+</p>
+
+> **[☕ Support Development on Buy Me a Coffee](https://buymeacoffee.com/icpriceaction)**
+
+---
+
 ## ⚡ Key Features
 
 - **Session Limits From Your Real Fills:** Counts completed trades, consecutive wins and losses, and realized P&L (commissions included) from the account's executions for this instrument, or uses the account-wide realized P&L. Limits use closed-trade P&L only; open P&L is shown for information and turns amber if closing now would breach your max daily loss.
 - **Early Warnings, Cooldown & Trade Window:** Amber warning and sound when you are one trade or one loss from a limit, or when a set percentage of the max daily loss is used. Optional cooldown after each losing trade with a countdown, and an optional trading-hours window with its own time zone (daylight saving handled, follows the Playback clock).
 - **Optional Entry Blocking (Never Closes Your Position):** When enabled, new entry orders are cancelled after the daily limit, during a cooldown or outside the trade window. A market entry that fills before it can be cancelled is offset by exactly its own quantity. Positions you already hold and their exits are never touched. When a limit is reached, the chart dims behind a clear on-chart message.
-- **PATS & Context Aligned:** Designed for Price Action principles (Mack / Thomas Wade) and disciplined futures execution.
-- **Zero Chart Lag:** Native C# execution optimized to prevent UI freezes on high-frequency 2000-tick ES/MES charts.
+- **PATS & Context Aligned:** Designed for Price Action principles and disciplined futures execution.
+- **Zero Chart Lag:** Native C# execution optimized to prevent UI freezes on high-frequency tick charts.
 - **Clean Visuals:** Complementary default palette that preserves candlestick clarity without chart clutter.
 - **Fully Customizable:** Configure colors, thresholds, offsets, and alerts via the native NT8 settings panel.
 
@@ -33,10 +52,9 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 
 ## ⚠️ Prerequisites & Data Requirements
 
-- Works on any chart and bar type. **Tick Replay is not required.**
 - **Calculate: On Each Tick** (the default) is recommended. On Bar Close still enforces limits from your fills, but Open P&L and the session reset only update when a bar closes.
 - A **connected account** is required. Tracking starts when the chart goes real-time and includes today's earlier fills for the instrument.
-- **Entry blocking places and cancels orders on your account.** All blocking options are off by default. Test them in the **Sim101** account or **Playback** mode before enabling them on a live account. An offset market order costs commission and slippage.
+- **Entry blocking places and cancels orders on your account.** All blocking options are off by default. Test them in the **Sim** accounts or **Playback** mode before enabling them on a live account. An offset market order costs commission and slippage.
 - Use only one copy per account and instrument setup you intend to enforce, and remove any older private version of this tool from your charts first.
 
 ---
@@ -44,7 +62,7 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 ## 📥 Installation Guide
 
 1. Head to the **[Releases](https://github.com/icPriceAction/trade-limiter/releases)** tab of this repository.
-2. Download the latest release `.zip` file (`icPriceAction_icPATradeLimiter_v2.3.2.zip`).
+2. Download the latest release `.zip` file.
    - *Note: Do NOT extract or unzip the file.*
 3. Open **NinjaTrader 8**.
 4. In the Control Center, navigate to:
@@ -94,7 +112,7 @@ Watch the complete breakdown of parameters, price action context, and chart exam
 
 ## 📝 Changelog
 
-- **v2.3.2** (2023-09-23) - Initial public release. Cleaned and optimized by icPriceAction.
+- **v2.3.2**              - Initial public release. Cleaned and optimized by icPriceAction.
 - **v2.3.1**              - Loss cooldown with countdown and optional entry blocking; a blocked fill is undone only once across several charts; blocked limit-order cancels retry, plus a once-a-second sweep.
 - **v2.3.0**              - Limits use realized P&L only (open P&L is display-only and turns amber when closing would breach the max loss); chart dimming; blocking-only enforcement that never closes held positions; optional win-streak warning; reason-coloured limit message; window follows the Playback clock.
 - **v2.2.0**              - Redesigned dashboard (Dark/Light/Custom themes, compact mode, progress bars); trade window with its own time zone; early warnings with sound.

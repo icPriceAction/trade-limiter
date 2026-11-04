@@ -9,6 +9,7 @@
 // Website:      https://icpriceaction.com
 // Repository:   https://github.com/icPriceAction/trade-limiter
 // YouTube:      https://youtube.com/@icPriceAction
+// Support:      https://buymeacoffee.com/icpriceaction
 //
 // License:      Free for personal trading use. Commercial resale, redistribution,
 //               or repackaging is strictly prohibited. See LICENSE in official repository.
@@ -19,7 +20,7 @@
 //               a trade window. Positions you already hold are never closed.
 //
 // Changelog:
-//   v2.3.2 (2023-09-23) - Initial public release. Cleaned and optimized by icPriceAction.
+//   v2.3.2              - Initial public release. Cleaned and optimized by icPriceAction.
 //   v2.3.1              - Loss cooldown with countdown and optional entry blocking; a blocked
 //                           fill is undone only once across several charts; blocked limit-order
 //                           cancels retry, plus a once-a-second sweep.
@@ -172,7 +173,9 @@ namespace NinjaTrader.NinjaScript.Indicators.icPA
 		{
 			if (State == State.SetDefaults)
 			{
-				Description									= @"Session discipline dashboard: counts your trades, win/loss streaks and realized P&L from the selected account's own fills, warns before a limit is hit, adds an optional cooldown after a loss and an optional trade-time window, and can block new entries (never closes a position you hold). Works on any bar type, no Tick Replay needed, designed for Calculate = On Each Tick. Tracking starts when the chart goes live and includes today's earlier fills. Developed by Istvan Cebrian | icPriceAction.com";
+				Description									= "Session discipline dashboard: counts your trades, win/loss streaks and realized P&L from the selected account's own fills, warns before a limit is hit, adds an optional cooldown after a loss and an optional trade-time window, and can block new entries (never closes a position you hold). Tracking starts when the chart goes live and includes today's earlier fills.\r\n"
+															+ "Developed by Istvan Cebrian | https://icpriceaction.com\r"
+															+ "Support this free tool: https://buymeacoffee.com/icpriceaction";
 				Name										= "icPA - Trade Limiter";
 				Calculate									= Calculate.OnEachTick;
 				IsOverlay									= true;
