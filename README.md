@@ -14,9 +14,9 @@ A specialized Indicator engineered for Price Action day trading. It tracks your 
 
 Watch the complete breakdown of parameters, price action context, and chart examples on YouTube:
 
-[![Watch the Video](assets/preview.png)](https://youtube.com/@icPriceAction)
+[![Watch the Video](assets/preview.png)](https://youtu.be/8Is4_H-t9RU)
 
-> **[▶ Click here to watch the full YouTube walkthrough](https://youtube.com/@icPriceAction)**
+> **[▶ Click here to watch the full YouTube walkthrough](https://youtu.be/8Is4_H-t9RU)**
 
 ---
 
